@@ -1,0 +1,46 @@
+{
+    "name": "adavibe",
+    "version": "0.1.0",
+    "description": "Interactive CLI wizard to configure CodeX or Claude Code for adaAI Platform API access.",
+    "type": "commonjs",
+    "main": "dist/index.js",
+    "bin": {
+        "adavibe": "dist/index.js"
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "clean": "rimraf dist",
+        "lint": "tsc --noEmit",
+        "dev": "ts-node src/index.ts",
+        "start": "node dist/index.js",
+        "prepublishOnly": "npm run build"
+    },
+    "keywords": [
+        "codex",
+        "claude",
+        "cli",
+        "adaai",
+        "vibe-coding"
+    ],
+    "author": "adaAI Platform",
+    "license": "MIT",
+    "dependencies": {
+        "kleur": "^4.1.5",
+        "prompts": "^2.4.2"
+    },
+    "devDependencies": {
+        "@types/node": "^20.0.0",
+        "@types/prompts": "^2.4.9",
+        "rimraf": "^5.0.0",
+        "ts-node": "^10.9.0",
+        "typescript": "^5.5.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/angga-ada-AI/adavibe"
+    },
+    "homepage": "https://adaai.id"
+}
